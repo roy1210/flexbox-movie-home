@@ -8,6 +8,12 @@ textarea {
   line-height: 1.8;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 body {
   background-color: #ededed;
   margin: 0;
@@ -83,4 +89,32 @@ p {
   .site-title {
     font-size: 4em;
   }
+}
+
+.main-content-area {
+  padding: 2em;
+}
+
+.post {
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.post a {
+  color: black;
+  text-decoration: none;
+}
+
+.post-content {
+  /* top, right and left, bottom */
+  padding: 0 40px 20px;
+}
+
+.post-content h2 {
+  background-color: #f6d200;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  /* To make background color for the whole width */
+  margin: 0 -40px 30px;
 }
