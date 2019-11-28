@@ -20,10 +20,17 @@ body {
   font-family: "Asap", sans-serif;
 }
 
-header,
 footer {
   background-color: black;
-  height: 100px;
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+header {
+  background-color: black;
 }
 
 .sidebar-right {
@@ -81,10 +88,46 @@ p {
 }
 
 .main-menu {
-  padding: 1em;
   color: black;
   background-color: #f6d200;
 }
+
+.main-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 0.6em 1em;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.main-menu li a:hover {
+  background-color: black;
+  color: yellow;
+}
+
+@media screen and (min-width: 810px) {
+  .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .main-menu ul li {
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 0;
+  }
+}
+
 @media screen and (min-width: 1120px) {
   .site-title {
     font-size: 4em;
